@@ -8,7 +8,7 @@ html {
   --title-color: #212121;
   --secondary-color: #2f303a;
   --accent-color: #2196f3;
-  --button-color: #f5f4fa;
+  --background-color: #f5f4fa;
 }
 
 /* Ширина контейнера всей страницы 1170px + по 15рх с обеих сторон (паддинг страницы) = 1200рх*/
@@ -21,6 +21,7 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid green;
 }
 
 /* список навигации */
@@ -32,7 +33,7 @@ html {
   margin-right: 50px;
 }
 
-.logo {
+.header .logo {
   margin-right: 93px;
 }
 
@@ -47,7 +48,6 @@ html {
 
 .nav-menu {
   margin-right: auto;
-  outline: 3рх solid orange !important;
 }
 
 .header {
@@ -57,6 +57,70 @@ html {
 
 .header .mail {
   margin-right: 50px;
+}
+
+.section {
+  outline: 1px solid green;
+}
+
+.section-hero .container {
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.section-hero .text-hero {
+  margin-bottom: 30px;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.features .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features,
+.our-work,
+.our-team {
+  margin-top: 94px;
+}
+
+.our-work .title-text {
+  margin-top: 0px;
+}
+
+.our-team .item {
+  width: calc((100%-30px * 3) / 4);
+}
+
+.our-team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team .title {
+  margin: 0;
+}
+
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--background-color);
+}
+
+.our-team .list {
+  margin-top: 50px;
+}
+
+.section-footer .container {
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+
+.section-footer .address-footer {
+  margin-top: 20px;
 }
 
 /* ОФОРМЛЕНИЕ ТЕКСТА */
@@ -148,7 +212,7 @@ main button,
 /* Кнопки фильтры на стр. Портфолио */
 .button {
   color: var(--title-color);
-  background-color: var(--button-color);
+  background-color: var(--background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -177,6 +241,8 @@ main button,
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  /* сбросила отступ между шапкой и героем */
+  margin-top: 0;
 }
 
 .features .title-text {
@@ -204,16 +270,24 @@ main button,
   text-align: center;
 }
 
-.our-team .title-text {
+.our-team .title {
   font-weight: 500;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
 }
 
 .our-team .paragraf {
   font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
-.our-team .title-text,
-.our-team .paragraf {
+.our-team .title-text {
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
