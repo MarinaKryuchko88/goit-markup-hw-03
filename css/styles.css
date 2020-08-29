@@ -50,7 +50,7 @@ html {
   margin-right: auto;
 }
 
-.header {
+.header .container {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -122,6 +122,51 @@ html {
 .section-footer .address-footer {
   margin-top: 20px;
 }
+
+/* стр. Портфолио */
+.gallery {
+  flex-wrap: wrap;
+}
+
+.portfolio .title-text {
+  margin-top: 0px;
+}
+
+.portfolio {
+  margin-top: 95px;
+  margin-bottom: 93px;
+}
+
+.portfolio .list-button {
+  justify-content: center;
+}
+
+.filters .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters .button {
+  padding: 6px 22px;
+}
+
+.cards {
+  margin-top: 34px;
+}
+
+.cards .item {
+  width: calc((100%-30px * 2) / 3);
+  /* margin-right: 30px; */
+}
+
+.cards .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
 
 /* ОФОРМЛЕНИЕ ТЕКСТА */
 
