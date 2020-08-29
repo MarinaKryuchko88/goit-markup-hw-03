@@ -21,7 +21,7 @@ html {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 }
 
 /* список навигации */
@@ -59,9 +59,9 @@ html {
   margin-right: 50px;
 }
 
-.section {
+/* .section {
   outline: 1px solid green;
-}
+} */
 
 .section-hero .container {
   height: 600px;
@@ -144,6 +144,10 @@ html {
 .portfolio {
   margin-top: 95px;
   margin-bottom: 93px;
+}
+
+.section-portfolio {
+  border-top: 1px solid #eeeeee;
 }
 
 .portfolio .list-button {
