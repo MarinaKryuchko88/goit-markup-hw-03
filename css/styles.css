@@ -90,6 +90,15 @@ html {
 
 .our-work .title-text {
   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.our-work .list {
+  margin-top: 50px;
+}
+
+.our-work .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team .item {
@@ -162,11 +171,11 @@ html {
   margin-right: 0px;
 }
 
-/* img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
 
 /* ОФОРМЛЕНИЕ ТЕКСТА */
 
