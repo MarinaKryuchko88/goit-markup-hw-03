@@ -144,8 +144,8 @@ html {
   padding-bottom: 93px;
 }
 
-.section-portfolio {
-  border-top: 1px solid #eeeeee;
+.header {
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio .list-button {
@@ -251,8 +251,11 @@ a {
 .links-header .link:hover,
 .links-header .link:focus,
 .links-footer :hover,
-.links-footer :focus,
-.current-link:visited {
+.links-footer :focus {
+  color: var(--accent-color);
+}
+
+.nav-menu .current-link {
   color: var(--accent-color);
 }
 
